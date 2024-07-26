@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headline Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/headline.png" type="image/x-icon">
+    
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" class="company-logo" id="company-logo">
+                <img src="./assets/logo.png" alt="logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex default-navbar">
+                    <li class="hover-link nav-item" id="olympic" onclick="onNavItemClick('olympic')">Olympic 2024</li>
+                    <li class="hover-link nav-item" id="education" onclick="onNavItemClick('education')">Eduaction</li>
+                    <li class="hover-link nav-item" id="health" onclick="onNavItemClick('health')">Health</li>
+                    <li class="hover-link nav-item" id="business" onclick="onNavItemClick('business')">Business</li>
+                    <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                    <li class="hover-link nav-item" id="travel" onclick="onNavItemClick('travel')">Travel</li>
+                    <li class="hover-link nav-item" id="entertainment" onclick="onNavItemClick('entertainment')">Entertainment</li>
+                </ul>
+                <ul class="sidebar">
+                    <li><i class="fa-solid fa-xmark" id="close-sidebar" onclick="closeSidebar()"></i></li>
+                    <li class="hover-link nav-item" id="olympic" onclick="onNavItemClick('olympic')">Olympic 2024</li>
+                    <li class="hover-link nav-item" id="education" onclick="onNavItemClick('education')">Eduaction</li>
+                    <li class="hover-link nav-item" id="health" onclick="onNavItemClick('health')">Health</li>
+                    <li class="hover-link nav-item" id="business" onclick="onNavItemClick('business')">Business</li>
+                    <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                    <li class="hover-link nav-item" id="travel" onclick="onNavItemClick('travel')">Travel</li>
+                    <li class="hover-link nav-item" id="entertainment" onclick="onNavItemClick('entertainment')">Entertainment</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input type="text" class="news-input" placeholder="e.g. Science" id="search-text">
+                <i class="fa-solid fa-magnifying-glass" onclick="search()"></i>
+            </div>
+            <div class="menu-bar">
+                <i class="fa-solid fa-bars" onclick="showSidebar()"></i>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+        </div>
+        <template id="template-news-card">
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">This is the title</h3>
+                    <h6 class="news-source" id="news-source">End Gadget 24/07/2024</h6>
+                    <p class="news-desc" id="news-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam soluta non aperiam cumque quibusdam cum beatae tempore aliquid dolor saepe, fuga accusamus maxime omnis laborum eius possimus at, repellendus facilis?
+                    </p>
+                </div>
+            </div>
+        </template>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
