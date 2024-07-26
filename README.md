@@ -22,4 +22,4 @@
         <li>A News API (https://newsapi.org/) is used to retrieve news data dynamically</li>
     </ul>
 </ul>
-<p><strong>Web App Link: </strong></p>
+<p><strong>Web App Link:</strong>https://swagatam007.github.io/Headline-Hub/</p>
